@@ -1,5 +1,7 @@
-const API_KEY = "YOUR_API_KEY";
-const cityLocation = "Paris";
+import config from './config.js';
+
+const API_KEY = config.API_KEY;
+const cityLocation = config.DEFAULT_CITY;
 const URL = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${cityLocation}&aqi=yes`;
 
 const fetchWeather = () => {
