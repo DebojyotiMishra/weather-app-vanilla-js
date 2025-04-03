@@ -13,7 +13,7 @@ const loadEnv = () => {
 const env = loadEnv();
 
 const config = {
-    API_KEY: env.WEATHER_API_KEY || 'aafffcb0a7b74c038c7101712252803',
+    API_KEY: env.WEATHER_API_KEY,
     DEFAULT_CITY: env.DEFAULT_CITY || 'Paris'
 };
 
